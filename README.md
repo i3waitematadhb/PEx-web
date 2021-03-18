@@ -2,7 +2,8 @@
 
 Clone this repository and run `composer update` (It will install all the website's required vendors)
 
-Upload the database "db-pex-web" and create and set up your `.env` file depending on your configuration (Note: There is an .env.example file in the project folder that you can copy and paste)
+Upload the database "db-pex-web"
+Create and Set-up your `.env` file depending on your configuration (Note: There is an .env.example file in the project folder that you can copy and paste)
 
 Open your terminal and change your directory to yoursite/themes/starter and run `yarn watch`
 
