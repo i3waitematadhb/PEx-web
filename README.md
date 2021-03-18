@@ -1,10 +1,12 @@
-## Overview
+## To Install ##
 
-Base project folder for a SilverStripe ([http://silverstripe.org](http://silverstripe.org)) installation. Required modules are installed via [http://github.com/silverstripe/recipe-cms](http://github.com/silverstripe/recipe-cms). For information on how to change the dependencies in a recipe, please have a look at [https://github.com/silverstripe/recipe-plugin](https://github.com/silverstripe/recipe-plugin). In addition, installer includes [theme/simple](https://github.com/silverstripe-themes/silverstripe-simple) as a default theme.
+Clone this repository and run `composer update` (It will install all the website's required vendors)
 
-## Installation ##
+Upload the database "db-pex-web" and create and set up your `.env` file depending on your configuration (Note: There is an .env.example file in the project folder that you can copy and paste)
 
-`composer create-project silverstripe/installer my-app`
+Open your terminal and change your directory to yoursite/themes/starter and run `yarn watch`
+
+## More from Silverstripe ##
 
 See [Getting Started](https://docs.silverstripe.org/en/4/getting_started/) for more information.
 
@@ -20,10 +22,10 @@ If you would like to make changes to the SilverStripe core codebase, we have an 
 
 ## Links ##
 
- * [Changelogs](https://docs.silverstripe.org/en/4/changelogs/)
- * [Bugtracker: Framework](https://github.com/silverstripe/silverstripe-framework/issues)
- * [Bugtracker: CMS](https://github.com/silverstripe/silverstripe-cms/issues)
- * [Bugtracker: Installer](https://github.com/silverstripe/silverstripe-installer/issues)
- * [Forums](http://silverstripe.org/forums)
- * [Developer Mailinglist](https://groups.google.com/forum/#!forum/silverstripe-dev)
- * [License](./LICENSE)
+* [Changelogs](https://docs.silverstripe.org/en/4/changelogs/)
+* [Bugtracker: Framework](https://github.com/silverstripe/silverstripe-framework/issues)
+* [Bugtracker: CMS](https://github.com/silverstripe/silverstripe-cms/issues)
+* [Bugtracker: Installer](https://github.com/silverstripe/silverstripe-installer/issues)
+* [Forums](http://silverstripe.org/forums)
+* [Developer Mailinglist](https://groups.google.com/forum/#!forum/silverstripe-dev)
+* [License](./LICENSE)
