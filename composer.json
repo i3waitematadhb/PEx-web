@@ -32,7 +32,8 @@
             "web.config"
         ],
         "expose" : [
-            "app/css"
+            "app/css",
+            "app/images"
         ]
     },
     "config": {
