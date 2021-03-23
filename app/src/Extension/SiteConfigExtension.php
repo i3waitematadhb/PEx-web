@@ -10,17 +10,16 @@ namespace {
     class SiteConfigExtension extends DataExtension
     {
         private static $has_one = [
-            'PageBgImage' => Image::class
+
         ];
 
         private static $owns = [
-            'PageBgImage'
+
         ];
 
         public function updateCMSFields(FieldList $fields)
         {
-            $fields->addFieldToTab('Root.Main', UploadField::create('PageBgImage', 'Page background image')
-                ->setFolderName('PageBackground_Images'));
+
         }
     }
 }
