@@ -13,6 +13,7 @@ namespace {
     use SilverStripe\Forms\TabSet;
     use SilverStripe\Forms\TextField;
     use SilverStripe\ORM\DataObject;
+    use SwiftDevLabs\CodeEditorField\Forms\CodeEditorField;
 
     class Section extends DataObject
     {
@@ -23,6 +24,7 @@ namespace {
             'Name'     => 'Text',
             'Type'     => 'Text',
             'Content'  => 'HTMLText',
+            'CodeEditor' => 'HTMLText',
             'Width'    => 'Varchar',
             'Animation'=> 'Text',
             'Archived' => 'Boolean',
@@ -66,6 +68,8 @@ namespace {
             if ($this->Type == 'Section') {
                 $fields->addFieldToTab('Root.Main', HTMLEditorField::create('Content'));
             }
+
+            $fields->addFieldToTab('Root.CodeEditor', CodeEditorField::create('CodeEditor'));
 
             $instance = self::singleton($this->Type);
             $instance->ID = $this->ID;
