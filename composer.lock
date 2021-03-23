@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c56c7bc66e4543ff84d9eedc23f1049",
+    "content-hash": "5dfb84b5aaf9216c937e125467bced7d",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -97,6 +97,67 @@
             "time": "2015-01-07T22:12:35+00:00"
         },
         {
+            "name": "bummzack/sortablefile",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bummzack/sortablefile.git",
+                "reference": "0028923180b10d7613ff239a0fd56acdf96872ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bummzack/sortablefile/zipball/0028923180b10d7613ff239a0fd56acdf96872ab",
+                "reference": "0028923180b10d7613ff239a0fd56acdf96872ab",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/asset-admin": "^1.1",
+                "silverstripe/assets": "^1.1",
+                "silverstripe/config": "^1",
+                "silverstripe/framework": "^4.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "default-branch": true,
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                },
+                "expose": [
+                    "client/dist"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bummzack\\SortableFile\\": "src/",
+                    "Bummzack\\SortableFile\\Tests\\": "tests/php/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "bummzack"
+                }
+            ],
+            "description": "An extension for SilverStripe 4 that adds sorting to UploadField.",
+            "keywords": [
+                "cms",
+                "file",
+                "silverstripe",
+                "sortable"
+            ],
+            "support": {
+                "issues": "https://github.com/bummzack/sortablefile/issues",
+                "source": "https://github.com/bummzack/sortablefile/tree/2.1.3"
+            },
+            "time": "2018-10-22T14:59:25+00:00"
+        },
+        {
             "name": "burnbright/silverstripe-hasonefield",
             "version": "dev-master",
             "source": {
@@ -151,6 +212,70 @@
                 "source": "https://github.com/silvershop/silverstripe-hasonefield/tree/master"
             },
             "time": "2020-07-30T20:54:18+00:00"
+        },
+        {
+            "name": "colymba/gridfield-bulk-editing-tools",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/colymba/GridFieldBulkEditingTools.git",
+                "reference": "3be003218c853cc3b76911c8b69011cd4c4b9297"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/3be003218c853cc3b76911c8b69011cd4c4b9297",
+                "reference": "3be003218c853cc3b76911c8b69011cd4c4b9297",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/asset-admin": "~1",
+                "silverstripe/framework": "~4"
+            },
+            "default-branch": true,
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                },
+                "expose": [
+                    "client/dist",
+                    "client/lang"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Colymba\\BulkTools\\": "src/BulkTools/",
+                    "Colymba\\BulkManager\\": "src/BulkManager/",
+                    "Colymba\\BulkUpload\\": "src/BulkUploader/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Thierry Francois",
+                    "homepage": "http://t-f.io"
+                },
+                {
+                    "name": "GitHub contributors",
+                    "homepage": "https://github.com/colymba/GridFieldBulkEditingTools/contributors"
+                }
+            ],
+            "description": "SilverStripe GridField component to upload images/files and edit records in bulk",
+            "homepage": "https://github.com/colymba/GridFieldBulkEditingTools",
+            "keywords": [
+                "Image upload",
+                "bulk upload",
+                "gridfield bulk upload",
+                "silverstripe"
+            ],
+            "support": {
+                "issues": "https://github.com/colymba/GridFieldBulkEditingTools/issues",
+                "source": "https://github.com/colymba/GridFieldBulkEditingTools/tree/master"
+            },
+            "time": "2020-11-23T17:24:42+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -492,12 +617,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/i3waitematadhb/cwp-starter-theme.git",
-                "reference": "8adebb3775346420bbe90830678699671e78a48f"
+                "reference": "ec0b5ec9b6a183a917b6642c22821de08868f0de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/i3waitematadhb/cwp-starter-theme/zipball/8adebb3775346420bbe90830678699671e78a48f",
-                "reference": "8adebb3775346420bbe90830678699671e78a48f",
+                "url": "https://api.github.com/repos/i3waitematadhb/cwp-starter-theme/zipball/ec0b5ec9b6a183a917b6642c22821de08868f0de",
+                "reference": "ec0b5ec9b6a183a917b6642c22821de08868f0de",
                 "shasum": ""
             },
             "require": {
@@ -530,7 +655,7 @@
             "support": {
                 "source": "https://github.com/i3waitematadhb/cwp-starter-theme/tree/pex"
             },
-            "time": "2021-03-01T03:45:11+00:00"
+            "time": "2021-03-23T22:06:00+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -788,16 +913,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.7.0",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "53330f47520498c0ae1f61f7e2c90f55690c06a3"
+                "reference": "35ea11d335fd638b5882ff1725228b3d35496ab1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/53330f47520498c0ae1f61f7e2c90f55690c06a3",
-                "reference": "53330f47520498c0ae1f61f7e2c90f55690c06a3",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/35ea11d335fd638b5882ff1725228b3d35496ab1",
+                "reference": "35ea11d335fd638b5882ff1725228b3d35496ab1",
                 "shasum": ""
             },
             "require": {
@@ -857,9 +982,9 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/1.7.0"
+                "source": "https://github.com/guzzle/psr7/tree/1.8.1"
             },
-            "time": "2020-09-30T07:37:11+00:00"
+            "time": "2021-03-21T16:25:00+00:00"
         },
         {
             "name": "intervention/image",
@@ -934,6 +1059,48 @@
                 "source": "https://github.com/Intervention/image/tree/master"
             },
             "time": "2019-11-02T09:15:47+00:00"
+        },
+        {
+            "name": "jinjie/codeeditorfield",
+            "version": "0.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jinjie/codeeditorfield.git",
+                "reference": "fdf6acfab11660d6c839402a6568deedd27c7017"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jinjie/codeeditorfield/zipball/fdf6acfab11660d6c839402a6568deedd27c7017",
+                "reference": "fdf6acfab11660d6c839402a6568deedd27c7017",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "silverstripe/framework": "^4"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "resources/thirdparty/ace",
+                    "resources/javascript"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kong Jin Jie",
+                    "email": "jinjie@swiftdev.sg"
+                }
+            ],
+            "description": "Code editor field for SilverStripe",
+            "support": {
+                "issues": "https://github.com/jinjie/codeeditorfield/issues",
+                "source": "https://github.com/jinjie/codeeditorfield/tree/0.0.4"
+            },
+            "time": "2019-11-22T07:33:12+00:00"
         },
         {
             "name": "league/csv",
@@ -3742,6 +3909,64 @@
             "time": "2020-07-30T04:46:06+00:00"
         },
         {
+            "name": "symbiote/silverstripe-multivaluefield",
+            "version": "5.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symbiote/silverstripe-multivaluefield.git",
+                "reference": "e405e27513d2b25d9edc5e949a243293da67245d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symbiote/silverstripe-multivaluefield/zipball/e405e27513d2b25d9edc5e949a243293da67245d",
+                "reference": "e405e27513d2b25d9edc5e949a243293da67245d",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~4.0"
+            },
+            "replace": {
+                "silverstripe/multivaluefield": "self.version"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "client"
+                ],
+                "installer-name": "multivaluefield"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symbiote\\MultiValueField\\": "src/",
+                    "Symbiote\\MultiValueField\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Nyeholt",
+                    "email": "marcus@symbiote.com.au"
+                }
+            ],
+            "description": "A DB field + form fields for storing multiple values in a single property (serialized).",
+            "keywords": [
+                "dbfield",
+                "formfield",
+                "silverstripe"
+            ],
+            "support": {
+                "issues": "https://github.com/symbiote/silverstripe-multivaluefield/issues",
+                "source": "https://github.com/symbiote/silverstripe-multivaluefield/tree/5"
+            },
+            "time": "2019-12-04T00:14:28+00:00"
+        },
+        {
             "name": "symfony/cache",
             "version": "v4.4.20",
             "source": {
@@ -5034,6 +5259,58 @@
             "time": "2018-03-20T01:57:54+00:00"
         },
         {
+            "name": "tractorcow/silverstripe-colorpicker",
+            "version": "4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tractorcow/silverstripe-colorpicker.git",
+                "reference": "69daa25c8ef7cf3b557e6563a3f60e8ad6d793cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tractorcow/silverstripe-colorpicker/zipball/69daa25c8ef7cf3b557e6563a3f60e8ad6d793cf",
+                "reference": "69daa25c8ef7cf3b557e6563a3f60e8ad6d793cf",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                },
+                "expose": [
+                    "client"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "TractorCow\\Colorpicker\\": "src/",
+                    "TractorCow\\Colorpicker\\Tests\\": "tests/php/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Damian Mooyman",
+                    "email": "damian.mooyman@gmail.com"
+                }
+            ],
+            "description": "Color picker field for Silverstripe CMS using the ColorPicker jQuery plugin",
+            "keywords": [
+                "color",
+                "colorpicker",
+                "colour",
+                "silverstripe"
+            ],
+            "support": {
+                "issues": "https://github.com/tractorcow/silverstripe-colorpicker/issues",
+                "source": "https://github.com/tractorcow/silverstripe-colorpicker/tree/4.1.0"
+            },
+            "time": "2019-10-17T02:18:35+00:00"
+        },
+        {
             "name": "tractorcow/silverstripe-proxy-db",
             "version": "0.1.0",
             "source": {
@@ -5078,6 +5355,126 @@
                 "source": "https://github.com/tractorcow/silverstripe-proxy-db/tree/master"
             },
             "time": "2018-02-16T01:16:44+00:00"
+        },
+        {
+            "name": "tractorcow/silverstripe-sliderfield",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tractorcow/silverstripe-sliderfield.git",
+                "reference": "804b0b494daa2fd93966d67c0a2a5249296817f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tractorcow/silverstripe-sliderfield/zipball/804b0b494daa2fd93966d67c0a2a5249296817f7",
+                "reference": "804b0b494daa2fd93966d67c0a2a5249296817f7",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "^4.0",
+                "silverstripe/vendor-plugin": "^1.0"
+            },
+            "default-branch": true,
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                },
+                "expose": [
+                    "client/dist"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "TractorCow\\Sliderfield\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Damian Mooyman",
+                    "email": "damian.mooyman@gmail.com"
+                }
+            ],
+            "description": "Simple slider field for Silverstripe",
+            "keywords": [
+                "jQueryUI",
+                "silverstripe",
+                "slider"
+            ],
+            "support": {
+                "issues": "https://github.com/tractorcow/silverstripe-sliderfield/issues",
+                "source": "https://github.com/tractorcow/silverstripe-sliderfield/tree/master"
+            },
+            "time": "2020-05-27T01:51:50+00:00"
+        },
+        {
+            "name": "unclecheese/display-logic",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/unclecheese/silverstripe-display-logic.git",
+                "reference": "c5f807dc24765438b427814350cc884ca70498b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-display-logic/zipball/c5f807dc24765438b427814350cc884ca70498b0",
+                "reference": "c5f807dc24765438b427814350cc884ca70498b0",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4.0"
+            },
+            "replace": {
+                "silverstripe/display-logic": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "se/selenium-server-standalone": "2.41.0",
+                "silverstripe/behat-extension": "^3@dev",
+                "silverstripe/serve": "^2"
+            },
+            "default-branch": true,
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "installer-name": "display-logic",
+                "expose": [
+                    "client"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "UncleCheese\\DisplayLogic\\": "src/",
+                    "UncleCheese\\DisplayLogic\\Tests\\": "tests/php/",
+                    "UncleCheese\\DisplayLogic\\Tests\\Behaviour\\": "tests/behat/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Uncle Cheese",
+                    "email": "unclecheese@leftandmain.com"
+                }
+            ],
+            "description": "Allows assignment of conditions for display and hide of specific form fields based on client side behavior.",
+            "keywords": [
+                "Forms",
+                "cms",
+                "display",
+                "logic",
+                "silverstripe"
+            ],
+            "support": {
+                "issues": "https://github.com/unclecheese/silverstripe-display-logic/issues",
+                "source": "https://github.com/unclecheese/silverstripe-display-logic/tree/2.0.3"
+            },
+            "time": "2019-10-15T23:31:03+00:00"
         },
         {
             "name": "undefinedoffset/sortablegridfield",
@@ -6051,7 +6448,12 @@
         "cwp/cwp": 20,
         "cwp/starter-theme": 20,
         "burnbright/silverstripe-hasonefield": 20,
-        "undefinedoffset/sortablegridfield": 20
+        "undefinedoffset/sortablegridfield": 20,
+        "bummzack/sortablefile": 20,
+        "colymba/gridfield-bulk-editing-tools": 20,
+        "unclecheese/display-logic": 20,
+        "tractorcow/silverstripe-colorpicker": 20,
+        "tractorcow/silverstripe-sliderfield": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

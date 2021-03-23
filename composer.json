@@ -10,7 +10,14 @@
         "cwp/cwp": "dev-master",
         "cwp/starter-theme": "dev-pex",
         "burnbright/silverstripe-hasonefield": "dev-master",
-        "undefinedoffset/sortablegridfield": "dev-master"
+        "undefinedoffset/sortablegridfield": "dev-master",
+        "bummzack/sortablefile": "dev-master",
+        "colymba/gridfield-bulk-editing-tools": "dev-master",
+        "unclecheese/display-logic": "dev-master",
+        "tractorcow/silverstripe-colorpicker": "^4@dev",
+        "tractorcow/silverstripe-sliderfield": "dev-master",
+        "symbiote/silverstripe-multivaluefield": "^5.0",
+        "jinjie/codeeditorfield": "^0.0.4"
     },
     "require-dev": {
         "sminnee/phpunit": "^5.7",
