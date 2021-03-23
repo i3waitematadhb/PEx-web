@@ -10,16 +10,17 @@ namespace {
     class SiteConfigExtension extends DataExtension
     {
         private static $has_one = [
-
+            'SiteLogo' => Image::class
         ];
 
         private static $owns = [
-
+            'SiteLogo'
         ];
 
         public function updateCMSFields(FieldList $fields)
         {
-
+            $fields->addFieldToTab('Root.Main', UploadField::create('SiteLogo')
+                ->setFolderName('SiteLogo'));
         }
     }
 }
