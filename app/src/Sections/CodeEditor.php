@@ -3,7 +3,6 @@
 namespace {
 
     use SilverStripe\Forms\FieldList;
-    use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
     use SwiftDevLabs\CodeEditorField\Forms\CodeEditorField;
 
     class CodeEditor extends Section
