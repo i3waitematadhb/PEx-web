@@ -50,8 +50,6 @@ namespace {
         public function getCMSFields()
         {
             $fields = new FieldList();
-
-
             $fields->push(Tabset::create('Root', Tab::create('Main')));
             if ($this->Type) {
                 $fields->addFieldToTab('Root.Main',
@@ -69,7 +67,11 @@ namespace {
                 $fields->addFieldToTab('Root.Main', HTMLEditorField::create('Content'));
             }
 
-            $fields->addFieldToTab('Root.CodeEditor', CodeEditorField::create('CodeEditor'));
+            if ($this->Type == 'CodeEditor') {
+                $fields->removeByName("CodeEditor");
+            } else {
+                $fields->addFieldToTab('Root.CodeEditor', CodeEditorField::create('CodeEditor'));
+            }
 
             $instance = self::singleton($this->Type);
             $instance->ID = $this->ID;

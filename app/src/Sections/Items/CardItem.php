@@ -28,7 +28,7 @@ namespace {
         ];
 
         private static $has_one = [
-            'Parent'  => Cards::class,
+            'Parent'  => Card::class,
             'Page'    => SiteTree::class,
             'BgImage' => Image::class
         ];
@@ -53,9 +53,9 @@ namespace {
                 ->setDescription('This will ignore if you have placed an External link.'));
             $fields->addFieldToTab('Root.Main', TextField::create('ExternalLink'));
             $fields->addFieldToTab('Root.Main', DropdownField::create('Width', 'Select width size',
-                SectionWidth::get()->map('Name','Name'))->setRightTitle('Tip: col-lg-6 is equivalent to a 50% width size'));
+                Width::get()->map('Name','Name'))->setRightTitle('Tip: col-lg-6 is equivalent to a 50% width size'));
             $fields->addFieldToTab('Root.Main', HTMLEditorField::create('Content'));
-            $fields->addFieldToTab('Root.Animation', DropdownField::create('AnimationType','Select animation', Animation::get()->filter('Archived', false)->map('Name', 'Name')));
+            $fields->addFieldToTab('Root.Animation', DropdownField::create('AnimationType','Select animation', Animations::get()->filter('Archived', false)->map('Name', 'Name')));
             $fields->addFieldToTab('Root.Main', CheckboxField::create('Archived'));
             $fields->addFieldToTab('Root.Main', HiddenField::create('Sort'));
 
