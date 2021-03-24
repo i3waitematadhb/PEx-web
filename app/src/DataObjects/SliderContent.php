@@ -28,6 +28,8 @@ namespace {
         ];
 
         private static $has_one = [
+
+
             'CardiologyPage' => CardiologyPage::class
         ];
 
