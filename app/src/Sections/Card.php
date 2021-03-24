@@ -14,7 +14,7 @@ namespace {
         private static $singular_name = 'Card';
 
         private static $has_many = [
-            'Cards' => CardItems::class
+            'Cards' => CardItem::class
         ];
 
         public function getSectionCMSFields(FieldList $fields)
