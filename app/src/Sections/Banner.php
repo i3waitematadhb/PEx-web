@@ -3,6 +3,7 @@
 namespace {
 
     use SilverStripe\AssetAdmin\Forms\UploadField;
+    use SilverStripe\Assets\File;
     use SilverStripe\Assets\Image;
     use SilverStripe\Forms\FieldList;
     use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
@@ -16,7 +17,7 @@ namespace {
         ];
 
         private static $has_one = [
-            'Image' => Image::class
+            'Image' => File::class
         ];
 
         private static $owns = [

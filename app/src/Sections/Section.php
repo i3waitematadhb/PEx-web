@@ -2,6 +2,7 @@
 
 namespace {
 
+    use SilverStripe\AssetAdmin\Forms\UploadField;
     use SilverStripe\Assets\Image;
     use SilverStripe\Core\ClassInfo;
     use SilverStripe\Forms\CheckboxField;
@@ -77,11 +78,14 @@ namespace {
             $instance->ID = $this->ID;
             $instance->getSectionCMSFields($fields);
 
+            $fields->addFieldToTab('Root.Settings', UploadField::create('BgImage', 'Section background image')
+                ->setFolderName('Section_Images'));
             $fields->addFieldToTab('Root.Settings', DropdownField::create('Width','Section width',
                 Width::get()->filter('Archived', false)->map('Name', 'Name')));
 
             $fields->addFieldToTab('Root.Settings', DropdownField::create('Animation','Select animation',
                 Animations::get()->filter('Archived', false)->map('Name', 'Name')));
+
             $fields->addFieldToTab('Root.Main', CheckboxField::create('Archived'));
             $fields->addFieldToTab('Root.Main', HiddenField::create('Sort'));
 
